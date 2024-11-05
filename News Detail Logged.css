@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f3f3f3;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .right-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px; /* Memberi jarak antara navigasi dan tombol Nurzaba */
+  }
+  
+  .navigation ul li {
+    margin-left: 20px;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .user-menu {
+    position: relative;
+  }
+  
+  .user-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 150px;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+  }
+  
+  .dropdown ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown ul li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-button:hover + .dropdown, .dropdown:hover {
+    display: block;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #4CAF50;
+  }
+  
+  .content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  
+  .content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+  }
+  
+  .news-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .news-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .news-details p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  

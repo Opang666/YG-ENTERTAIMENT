@@ -9,11 +9,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
 }
+
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
   background-color: #fff;
+  padding: 20px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -32,15 +34,20 @@ body {
   font-size: 1.2em;
 }
 
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
 .navigation ul {
   list-style: none;
   display: flex;
-  margin-left: auto;
+  margin-right: 20px; /* Memberi jarak antara navigasi dan tombol Nurzaba */
 }
 
 .navigation ul li {
   margin-left: 20px;
-}
+} 
 
 .navigation ul li a {
   text-decoration: none;
@@ -48,30 +55,46 @@ body {
   font-weight: bold;
 }
 
+.navigation ul li a, .user-button {
+  font-family: 'Arial', sans-serif;
+  font-size: 16x;
+}
+
 .user-menu {
   position: relative;
-  margin-left: 20px;
 }
 
 .user-button {
-  background-color: #fff;
+  background-color: #333;
+  color: #fff;
   border: none;
-  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .dropdown {
   display: none;
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 0;
   background-color: #fff;
   border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   width: 150px;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
 }
 
 .dropdown ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .dropdown ul li a {
@@ -85,9 +108,10 @@ body {
   background-color: #f0f0f0;
 }
 
-.user-button:hover + .dropdown, .dropdown:hover {
-  display: block;
+.dropdown ul li:last-child {
+  border-bottom: none;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -152,6 +176,7 @@ body {
     grid-template-columns: 1fr;
   } 
 }
+
 .footer {
   text-align: center;
   padding: 20px;
