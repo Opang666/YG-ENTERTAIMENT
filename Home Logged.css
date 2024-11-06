@@ -1,312 +1,322 @@
-/* General Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  /* General Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+  body {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+  .logo {
+    display: flex;
+    align-items: center;
+  }
 
-.logo img {
-  width: 50px;
-  margin-right: 10px;
-}
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
 
-.logo span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
+  .logo span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
 
-.right-menu {
-  display: flex;
-  align-items: center;
-}
+  .right-menu {
+    display: flex;
+    align-items: center;
+  }
 
-.navigation ul {
-  list-style: none;
-  display: flex;
-  margin-right: 20px; /* Memberi jarak antara navigasi dan tombol Nurzaba */
-}
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px; /* Memberi jarak antara navigasi dan tombol Nurzaba */
+  }
 
-.navigation ul li {
-  margin-left: 20px;
-} 
+  .navigation ul li {
+    margin-left: 20px;
+  } 
 
-.navigation ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
 
-.navigation ul li a, .user-button {
-  font-family: 'Arial', sans-serif;
-  font-size: 16x;
-}
+  .navigation ul li a, .user-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16x;
+  }
 
-.user-menu {
-  position: relative;
-}
+  .user-menu {
+    position: relative;
+  }
 
-.user-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  width: 150px;
-  z-index: 1000;
-  font-family: 'Arial', sans-serif;
-}
-
-.dropdown ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown ul li {
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.dropdown ul li a {
-  display: block;
-  padding: 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-.dropdown ul li a:hover {
-  background-color: #f0f0f0;
-}
-
-.dropdown ul li:last-child {
-  border-bottom: none;
-}
-
-/* Hero Section Styles */
-.hero {
-  background-color: #fff;
-  /* position: relative; */
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  text-align: center;
-}
-
-.center{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 16px;
-  color: white;
-}
-
-/* Upcoming News/Concerts Styles */
-.upcoming-news,
-.upcoming-concerts {
-  margin-top: 30px;
-}
-
-.upcoming-news h2,
-.upcoming-concerts h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.news-grid,
-.concert-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
-.news-item,
-.concert-item {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.news-item img,
-.concert-item img {
-  width: 100%;
-  height: auto;
-}
-
-.news-item h3,
-.concert-item h3 {
-  padding: 15px;
-  font-size: 16px;
-}
-
-/* New Merch Styles */
-.new-merch {
-  margin-top: 30px;
-}
-
-
-.new-merch h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.merch-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
-.merch-item {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-}
-
-.merch-item:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transform: scale(1.02);
-  transition: transform 0.5s ease;
-}
-
-.merch-item img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.merch-item h3 {
-  font-size: 16px;
-}
-
-/* Looking for Artists Styles */
-.artist-section {
-  margin-top: 30px;
-}
-
-.artist-section h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.artist-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-}
-
-.artist-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
-}
-.artist-card:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-}
-
-.artist-card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-.artist-card h3 {
-  font-size: 16px;
-}
-/* More Button Styles */
-.more-link {
-  text-align: center;
-  margin : 30px;
-}
-
-.more-link a {
-  display: inline-block;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.more-link a:hover {
-  background-color: #333;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .more-link a {
-    font-size: 14px;
+  .user-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: #fff;
+    border: none;
     padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
   }
-}
 
-@media (max-width: 480px) {
+  .user-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 150px;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown ul li {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .dropdown ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .dropdown ul li a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .dropdown ul li:last-child {
+    border-bottom: none;
+  }
+
+  /* Hero Section Styles */
+  .hero {
+    background-color: #fff;
+    /* position: relative; */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+  }
+
+  .center{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    color: white;
+  }
+
+  /* Upcoming News/Concerts Styles */
+  .upcoming-news,
+  .upcoming-concerts {
+    margin-top: 30px;
+  }
+
+  .upcoming-news h2,
+  .upcoming-concerts h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .news-grid,
+  .concert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .news-item,
+  .concert-item {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .news-item img,
+  .concert-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .news-item h3,
+  .concert-item h3 {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  /* New Merch Styles */
+  .new-merch {
+    margin-top: 30px;
+  }
+
+
+  .new-merch h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .merch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .merch-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .merch-item:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+  }
+
+  .merch-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .merch-item h3 {
+    font-size: 16px;
+  }
+
+  /* Looking for Artists Styles */
+  .artist-section {
+    margin-top: 30px;
+  }
+
+  .artist-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .artist-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+
+  .artist-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  .artist-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+  .artist-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .artist-card h3 {
+    font-size: 16px;
+  }
+  /* More Button Styles */
+  .more-link {
+    text-align: center;
+    margin : 30px;
+  }
+
   .more-link a {
-    font-size: 12px;
-    padding: 6px 12px;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
   }
-}
 
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #666;
-  background-color: #333;
-  color: #fff;
-  border-top: 1px solid #ddd;
-}
+  .more-link a:hover {
+    background-color: #333;
+  }
 
-.footer p {
-  margin-bottom: 10px;
-}
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .more-link a {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .more-link a {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #292929;
+    color: #fff;
+    border-top: 1px solid #ddd;
+  }
+
+  .footer p {
+    margin-bottom: 10px;
+  }

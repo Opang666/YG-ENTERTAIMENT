@@ -1,197 +1,207 @@
-/* General Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  /* General Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+  .logo {
+    display: flex;
+    align-items: center;
+  }
 
-.logo img {
-  width: 50px;
-  margin-right: 10px;
-}
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
 
-.logo span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
+  .logo span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
 
-.right-menu {
-  display: flex;
-  align-items: center;
-}
+  .right-menu {
+    display: flex;
+    align-items: center;
+  }
 
-.navigation ul {
-  list-style: none;
-  display: flex;
-  margin-right: 20px; /* Memberi jarak antara navigasi dan tombol Nurzaba */
-}
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px; /* Memberi jarak antara navigasi dan tombol Nurzaba */
+  }
 
-.navigation ul li {
-  margin-left: 20px;
-}
+  .navigation ul li {
+    margin-left: 20px;
+  }
 
-.navigation ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
 
-.user-menu {
-  position: relative;
-}
+  .user-menu {
+    position: relative;
+  }
 
-.user-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-}
+  .user-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
 
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  width: 150px;
-  z-index: 1000;
-}
+  .user-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+  }
 
-.dropdown ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 150px;
+    z-index: 1000;
+  }
 
-.dropdown ul li {
-  border-bottom: 1px solid #f0f0f0;
-}
+  .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.dropdown ul li a {
-  display: block;
-  padding: 10px;
-  color: #333;
-  text-decoration: none;
-}
+  .dropdown ul li {
+    border-bottom: 1px solid #f0f0f0;
+  }
 
-.dropdown ul li a:hover {
-  background-color: #f0f0f0;
-}
+  .dropdown ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
 
-.dropdown ul li:last-child {
-  border-bottom: none;
-}
+  .dropdown ul li a:hover {
+    background-color: #f0f0f0;
+  }
 
-/* Artist Details Styles */
-.artist-details {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 30px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-}
+  .dropdown ul li:last-child {
+    border-bottom: none;
+  }
 
-.artist-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
+  /* Artist Details Styles */
+  .artist-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
 
-.artist-info h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+  .artist-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
 
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
+  .artist-info h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
-.member-card {
-  text-align: center;
-}
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
 
-.member-card img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
+  .member-card {
+    text-align: center;
+  }
 
-.member-card h3 {
-  font-size: 16px;
-}
+  .member-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
 
-/* Merch Grid Styles */
-.merch-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
-  margin-top: 30px;
-}
+  .member-card h3 {
+    font-size: 16px;
+  }
 
-.merch-item {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-}
+  /* Merch Grid Styles */
+  .merch-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
 
-.merch-item img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
+  .merch-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
 
-.merch-item h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
+  .merch-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-.merch-item p {
-  font-size: 14px;
-  color: #666;
-}
+  .merch-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 
-/* Footer Styles */
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #666;
-  background-color: #333;
-  color: #fff;
-  border-top: 1px solid #ddd;
-}
+  .merch-item p {
+    font-size: 14px;
+    color: #666;
+  }
 
-.footer p {
-  margin-bottom: 10px;
-}
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #292929;
+    color: #fff;
+    border-top: 1px solid #ddd;
+  }
+
+  .footer p {
+    margin-bottom: 10px;
+  }

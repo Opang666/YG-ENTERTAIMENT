@@ -1,5 +1,4 @@
-  /* General Styles */
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -122,102 +121,143 @@
     border-bottom: none;
   }
 
-  .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
-  }
+    display: flex;
+    gap: 4rem;
+}
 
-  h1 {
-    text-align: left;
-    margin-bottom: 30px;
-  }
+.contact-info h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
 
-  /* Product Grid Styles */
-  .product-grid {
+.contact-info p {
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.contact-email {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-phone {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.contact-sections {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-  }
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
-  .product-item {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+.section-title {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.section-content {
+    color: #333;
+    line-height: 1.5;
+}
+
+.contact-form {
+    background: whitesmoke;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.form-header {
     text-align: center;
-  }
+    margin-bottom: 2rem;
+}
 
-  .product-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
+.form-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
 
-  .product-item h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  .product-item p {
-    font-size: 14px;
+.form-header p {
     color: #666;
-    margin-bottom: 15px;
-  }
+}
 
-  .product-item a {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
 
-  .product-item a:hover {
-    background-color: #3e8e41;
-  }
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
 
-  .more-link {
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #292929;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.submit-btn:hover {
+    background: #444;
+}
+
+.form-footer {
     text-align: center;
-    margin-top: 30px;
-  }
+    color: #666;
+    font-size: 0.9rem;
+}
 
-  .more-link a {
-    display: inline-block;
-    background-color: white;
-    color: black;
+.form-footer a {
+    color: #333;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
+}
 
-  .more-link a:hover {
-    background-color: #555;
-  }
+.form-footer a:hover {
+    text-decoration: underline;
+}
 
-  /* Responsive Styles */
-  @media (max-width: 992px) {
-    .product-grid {
-      grid-template-columns: repeat(3, 1fr);
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
-  }
 
-  @media (max-width: 768px) {
-    .product-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .contact-sections {
+        grid-template-columns: 1fr;
     }
-  }
 
-  @media (max-width: 480px) {
-    .product-grid {
-      grid-template-columns: 1fr;
+    .form-row {
+        grid-template-columns: 1fr;
     }
-  }
-  
-  .footer {
+}
+
+.footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
@@ -225,8 +265,8 @@
     background-color: #292929;
     color: #fff;
     border-top: 1px solid #ddd;
-  }
+}
 
-  .footer p {
+.footer p {
     margin-bottom: 10px;
-  }
+}
