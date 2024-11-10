@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 8px 20px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -115,6 +115,7 @@
 .dropdown ul li:last-child {
   border-bottom: none;
 }
+
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -145,6 +146,7 @@ h2 {
   margin-left: 5px;
   cursor: pointer;
 }
+
 .order-list {
   display: flex;
   flex-direction: column;
