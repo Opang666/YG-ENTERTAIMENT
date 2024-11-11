@@ -32,8 +32,9 @@
     font-weight: bold;
     font-size: 1.2em;
   }  
+  
 .logout-btn {
-    background-color: #444;
+    background-color: black;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -51,7 +52,7 @@
   .sidebar {
     width: 200px;
     height: 350px;
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -87,7 +88,7 @@
   }
   
   .add-artist-button {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     border: none;
     padding: 10px 20px;
