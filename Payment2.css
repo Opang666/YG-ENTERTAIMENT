@@ -140,6 +140,26 @@
     padding-top: 10px;
 }
 
+.badge-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bi-check-circle {
+  width: 200px; 
+  height: 200px;
+  color: #000; 
+}
+
+.points-text {
+  text-align: center;
+  font-size: 18px; 
+  color: #ff9800; 
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
 #img{
     margin: 0 auto;
     padding-left: 45%;

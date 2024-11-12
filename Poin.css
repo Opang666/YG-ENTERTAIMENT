@@ -96,95 +96,112 @@
       font-family: 'Arial', sans-serif;
     }
   
-  .points-content {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tier-status {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .tier-status h2 {
-    font-size: 2em;
-  }
-  
-  .tier-status .point-balance {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .tier-status h3 {
-    font-size: 2em;
-    color: #ffcc00;
-  }
-  
-  .available-coupons h4,
-  .redeem-rewards h4,
-  .points-activity h4 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .coupon {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .coupon input {
-    border: 1px solid #ddd;
-    padding: 5px;
-    width: 100px;
-    text-align: center;
-  }
-  
-  .coupon button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .redeem-rewards .reward-images {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .reward-images img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .points-activity table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  .points-activity th, .points-activity td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  .points-activity th {
-    background-color: #f3f3f3;
-    font-weight: bold;
-  }
+    .points-content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+    
+    /* Tier Status */
+    .tier-status {
+      text-align: center;
+      background-color: black;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    
+    .tier-status h2 {
+      font-size: 2em;
+    }
+    
+    .tier-status .point-balance {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    
+    .tier-status h3 {
+      font-size: 2em;
+      color: #ffcc00;
+    }
+    
+    /* Available Coupons */
+    .available-coupons h4 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    
+    .coupon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    
+    .coupon span {
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    
+    .coupon input {
+      border: 1px solid #ddd;
+      padding: 5px;
+      width: 100px;
+      text-align: center;
+      margin-right: 10px;
+    }
+    
+    .coupon button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    /* Redeem Rewards */
+    .redeem-rewards h4 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    
+    .reward-images {
+      justify-content: center;
+      display: flex;
+      gap: 10px;
+    }
+    
+    .reward-images img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    /* Points Activity */
+    .points-activity h4 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    
+    .points-activity table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    
+    .points-activity th, .points-activity td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    
+    .points-activity th {
+      background-color: #f3f3f3;
+      font-weight: bold;
+    }
   
   .footer {
     text-align: center;
